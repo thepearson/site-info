@@ -1,0 +1,15 @@
+{
+    "redis": {
+        "host": "localhost",
+        "port": 6379
+    },
+    "api": {
+        "port": 3000 // Define the port on which the API will listen
+    },
+    "task": {
+        "ttl": 86400 // Configurable time-to-live in seconds (default: 24 hours)
+    },
+    "log": {
+        "file": "scan_log.txt" // Path to the log file
+    }
+}

@@ -4,12 +4,12 @@
         "port": 6379
     },
     "api": {
-        "port": 3000 // Define the port on which the API will listen
+        "port": 3000
     },
     "task": {
-        "ttl": 86400 // Configurable time-to-live in seconds (default: 24 hours)
+        "ttl": 86400
     },
     "log": {
-        "file": "scan_log.txt" // Path to the log file
+        "file": "scan_log.txt"
     }
 }

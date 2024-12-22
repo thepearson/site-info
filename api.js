@@ -9,7 +9,10 @@ const { log } = require('./utilities/logger');
 const config = JSON.parse(fs.readFileSync('config.json', 'utf-8'));
 
 // Redis client
-const redisClient = new redis.Cluster([config.redis]);
+const redisClient = new redis.Cluster([{
+    host: config.redis.host,
+    port: config.redis.port,
+}]);
 
 const taskQueue = new Queue('task-queue', { redis: config.redis });
 // Status queue is only used by workers, not directly by the API

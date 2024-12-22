@@ -1,11 +1,18 @@
 services:
-  redis:
-    image: redis:latest
-    restart: unless-stopped
-    volumes:
-      - redis-data:/data
+  api:
+    build: .
     ports:
-      - 6379:6379
+      - "3000:3000"
+    depends_on:
+      - rabbitmq
+    volumes:
+      - outputs:/app/outputs # Mount the outputs volume
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15672:15672" # for management UI
 
 volumes:
-  redis-data:
+  outputs: # Define the outputs volume

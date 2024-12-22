@@ -17,11 +17,7 @@
   },
   "homepage": "https://github.com/thepearson/site-info#readme",
   "dependencies": {
-    "bee-queue": "^1.7.1",
-    "express": "^4.21.2",
-    "puppeteer": "^23.11.0",
-    "redis": "^4.7.0",
-    "uuid": "^11.0.3",
-    "webappalyzer-js": "^1.0.6"
+    "amqplib": "^0.10.5",
+    "express": "^4.21.2"
   }
 }

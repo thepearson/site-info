@@ -1,4 +1,0 @@
-[2024-12-19T07:17:30.750Z] API started listening on port 3000
-[2024-12-19T07:20:34.300Z] API started listening on port 3000
-[2024-12-19T07:21:02.373Z] API started listening on port 3000
-[2024-12-19T07:29:07.268Z] API started listening on port 3000
